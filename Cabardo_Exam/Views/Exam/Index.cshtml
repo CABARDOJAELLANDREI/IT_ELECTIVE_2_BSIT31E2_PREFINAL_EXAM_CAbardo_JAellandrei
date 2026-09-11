@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ExamApp.Models.ExamQuestion>
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Prefinal Exam Questions & Answers</h2>
+    <div class="row">
+        @foreach (var q in Model)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-header bg-primary text-white fw-bold">
+                        Question #@q.Id
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text fw-bold">@q.QuestionText</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            @foreach (var opt in q.Options)
+                            {
+                                bool isCorrect = opt.StartsWith(q.CorrectAnswer.Substring(0, 2));
+                                <li class="list-group-item @(isCorrect ? "list-group-item-success fw-bold" : "")">
+                                    @opt @(isCorrect ? " ✔" : "")
+                                </li>
+                            }
+                        </ul>
+                        <div class="alert alert-info py-2 m-0">
+                            <strong>Explanation:</strong> @q.Explanation
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
