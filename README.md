@@ -1,73 +1,74 @@
 <div align="center">
 
-  <!-- Header Banner Block -->
-  <table width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=220&section=header&text=Jael%20Andrei%20Cabardo&fontSize=42&fontAlignY=38&desc=3RD%20YEAR%20STUDENT%20%E2%80%A2%20SOFTWARE%20DEV%20%E2%80%A2%20BSIT31E2&descSize=14&descAlignY=62" width="100%" />
+
+  <br/>
+
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=IT+ELECTIVE+2+%E2%80%A2+PREFINAL+EXAMINATION;ASP.NET+Core+MVC+%E2%80%A2+Web+Systems+%26+Technologies" alt="Typing Quote" />
+  </a>
+
+  <br/><br/>
+
+  <p>
+    <img src="https://img.shields.io/badge/COURSE-IT_ELECTIVE_2-000000?style=for-the-badge&logoColor=38bdf8&labelColor=0c2d48" />
+    <img src="https://img.shields.io/badge/SECTION-BSIT31E2-000000?style=for-the-badge&logoColor=a855f7&labelColor=1e1035" />
+    <img src="https://img.shields.io/badge/FRAMEWORK-ASP.NET_CORE_MVC-000000?style=for-the-badge&logo=dotnet&logoColor=512BD4&labelColor=121020" />
+    <br/>
+    <img src="https://img.shields.io/badge/LOCATION-PHILIPPINES-000000?style=for-the-badge&logo=googlemaps&logoColor=ec4899&labelColor=3b0d25" />
+    <a href="mailto:jaellandreic@gmail.com">
+      <img src="https://img.shields.io/badge/EMAIL-JAELLANDREIC%40GMAIL.COM-000000?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=3b1212" alt="Email" />
+    </a>
+  </p>
+
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4300-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
+
+  <br/><br/>
+
+  <h2>⚡ REPOSITORY OVERVIEW</h2>
+
+  <table>
     <tr>
-      <td align="center" style="background: linear-gradient(135deg, #07192f 0%, #0c2840 45%, #2a0826 100%); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-        <p><img src="https://img.shields.io/badge/IT_ELECTIVE_2-PREFINAL_EXAM-00d2ff?style=for-the-badge&logoColor=white" alt="Badge" /></p>
-        <h1 align="center">⚡ Prefinal Exam Portal Dashboard</h1>
-        <p align="center"><b>Web Systems &amp; Technologies — Dynamic Question Bank</b></p>
-        <p align="center">
-          <b>Jaell Andrei Cabardo</b> &nbsp;•&nbsp; 
-          <b>BSIT31E2</b> &nbsp;•&nbsp; 
-          <b>A.Y. 2026–2027</b>
-        </p>
+      <td width="50%" align="center">
+        <p><img src="https://img.shields.io/badge/STUDENT-JAELL_ANDREI_CABARDO-000000?style=for-the-badge&logo=github&labelColor=1e1035" /></p>
+        <p><img src="https://img.shields.io/badge/TERM-1ST_SEM_AY_2026--2027-000000?style=for-the-badge&logoColor=38bdf8&labelColor=0c2d48" /></p>
+        <p><img src="https://img.shields.io/badge/ARCHITECTURE-IN--MEMORY_NO_DB-000000?style=for-the-badge&logoColor=22c55e&labelColor=0f392b" /></p>
+      </td>
+      <td width="50%" align="center">
+        <p><img src="https://img.shields.io/badge/REPO_NAME-IT__ELECTIVE__2__BSIT31E2__PREFINAL__EXAM-000000?style=for-the-badge&logoColor=facc15&labelColor=332800" /></p>
+        <p><img src="https://img.shields.io/badge/THEME-DARK_CYBER_GLASSMORPHISM-000000?style=for-the-badge&logoColor=a855f7&labelColor=1e1035" /></p>
+        <p><img src="https://img.shields.io/badge/COMMITS-25%2B_SEQUENTIAL_COMMITS-000000?style=for-the-badge&logoColor=22c55e&labelColor=0f392b" /></p>
       </td>
     </tr>
   </table>
 
-  <br />
+  <br/>
 
-  <!-- GitHub Badges -->
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4300-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
+
+  <br/><br/>
+
+  <h2>🚀 KEY FEATURES</h2>
   <p>
-    <img src="https://img.shields.io/badge/IT_ELECTIVE_2-PREFINAL_EXAM-00d2ff?style=for-the-badge&logoColor=white" alt="Course Badge" />
-    <img src="https://img.shields.io/badge/SECTION-BSIT31E2-9d4edd?style=for-the-badge&logoColor=white" alt="Section Badge" />
-    <img src="https://img.shields.io/badge/FRAMEWORK-ASP.NET_CORE_MVC-00ff87?style=for-the-badge&logo=dotnet&logoColor=black" alt="Framework Badge" />
+    <img src="https://img.shields.io/badge/💎_UI-GLASSMORPHISM_THEME-000000?style=for-the-badge&logoColor=38bdf8&labelColor=0c2d48" />
+    <img src="https://img.shields.io/badge/⚡_DATA-STATIC_LIST_COLLECTIONS-000000?style=for-the-badge&logoColor=22c55e&labelColor=0f392b" />
+    <img src="https://img.shields.io/badge/🔍_NAV-REALTIME_SEARCH_FILTER-000000?style=for-the-badge&logoColor=facc15&labelColor=332800" />
+    <img src="https://img.shields.io/badge/💡_EXPLANATIONS-INCLUDED_PER_ITEM-000000?style=for-the-badge&logoColor=a855f7&labelColor=1e1035" />
   </p>
 
+  <br/>
+
 </div>
-
-## 📌 Repository Information
-
-<table>
-  <tr>
-    <td><b>Repository Name</b></td>
-    <td><code>IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Cabardo_JaellAndrei</code></td>
-  </tr>
-  <tr>
-    <td><b>Architecture</b></td>
-    <td>ASP.NET Core MVC (In-Memory Data Storage / No DB)</td>
-  </tr>
-  <tr>
-    <td><b>Design Theme</b></td>
-    <td>Dark Cyber Glassmorphism (Neon Accents & Frosted Panels)</td>
-  </tr>
-  <tr>
-    <td><b>Total Commits</b></td>
-    <td>25+ Sequential Progress Commits</td>
-  </tr>
-</table>
-
----
-
-## 🚀 Key Features
-
-* <b>💎 Cyber-Glassmorphism Interface:</b> Deep navy gradient background paired with translucent blurred cards and glowing status indicators.
-* <b>⚡ In-Memory Architecture:</b> Built with strongly typed C# models and static dataset collections—no external SQL database needed.
-* <b>🔍 Interactive Search & Navigation:</b> Instant client-side search bar and quick-jump navigation pills to filter all 20 examination items.
-* <b>💡 Question Rationale & Indicators:</b> Clear visual feedback with neon-green badges for correct answers and highlighted explanations.
-
----
 
 ## 🎯 Learning Objectives Coverage
 
 | Objective | Status | Implementation Details |
 | :--- | :---: | :--- |
-| **1. Repository Naming Format** | 🛠️ Completed | Structured using standard exam guidelines. |
-| **2. MVC Application Build** | 🛠️ Completed | Implemented Models, Views, and Controllers displaying all 20 exam items. |
-| **3. Project README Setup** | 🛠️ Completed | Styled HTML documentation detailing project specifications. |
-| **4. Student Identification** | 🛠️ Completed | Displayed student name and section in UI header and README header. |
-| **5. Commit History Tracking** | 🛠️ Completed | Minimum of 20 commits logged (1 commit per answered item). |
+| **1. Repository Naming Format** | 🛠️ Completed | Formatted according to exam guidelines (`IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Cabardo_JaellAndrei`). |
+| **2. MVC Application Build** | 🛠️ Completed | Models, Views, and Controllers created to display all 20 exam items. |
+| **3. Project README Setup** | 🛠️ Completed | Styled HTML documentation integrated matching personal profile theme. |
+| **4. Student Identification** | 🛠️ Completed | Name and section placed on UI dashboard and README headers. |
+| **5. Commit History Tracking** | 🛠️ Completed | Logged sequential commits for project setup, questions, and styling. |
 
 ---
 
@@ -85,4 +86,4 @@
  ┃ ┗ 📂 Shared
  ┃   ┗ 📜 _Layout.cshtml          <-- Core layout with fonts & icons
  ┣ 📂 wwwroot                     <-- Bootstrap & site styling assets
- ┗ 📜 README.md
+ ┗ 📜 README.md                   <-- Profile-styled README
