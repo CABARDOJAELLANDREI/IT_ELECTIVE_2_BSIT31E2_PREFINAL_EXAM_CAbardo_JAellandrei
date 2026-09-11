@@ -198,6 +198,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "A. It loads the related Section navigation property",
                 Explanation = "Passing the expression 's => s.Section' to Include ensures the related Section model is populated."
             },
+
+            // Question 13
+            new ExamQuestion
+            {
+                Id = 13,
+                QuestionText = "Which type of validation occurs in the browser before a request is sent to the server?",
+                Options = new List<string>
+                {
+                    "A. Database-level validation",
+                    "B. Client-side validation",
+                    "C. Server-side validation",
+                    "D. EF Core migration validation"
+                },
+                CorrectAnswer = "B. Client-side validation",
+                Explanation = "Client-side validation runs in the browser via JavaScript to check user input before submission."
+            },
         };
 
         public IActionResult Index()
