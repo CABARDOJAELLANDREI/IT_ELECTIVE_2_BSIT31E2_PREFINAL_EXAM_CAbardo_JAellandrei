@@ -21,7 +21,23 @@ namespace ExamApp.Controllers
                 },
                 CorrectAnswer = "C. It allows data to persist after the application stops",
                 Explanation = "Databases persist data to disk, whereas in-memory data is cleared when the application stops."
-            }
+            },
+
+            // Question 2
+            new ExamQuestion
+            {
+                Id = 2,
+                QuestionText = "Which approach is being used when an existing database is used to generate EF Core entity classes?",
+                Options = new List<string>
+                {
+                    "A. Code-First",
+                    "B. Database-First",
+                    "C. Model-First",
+                    "D. Controller-First"
+                },
+                CorrectAnswer = "B. Database-First",
+                Explanation = "Database-First reverse-engineers entity models and DbContext from an existing database schema."
+            },
         };
 
         public IActionResult Index()
