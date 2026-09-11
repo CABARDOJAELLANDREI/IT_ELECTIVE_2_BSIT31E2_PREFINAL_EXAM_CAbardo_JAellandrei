@@ -134,6 +134,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "B. Foreign key referencing Section",
                 Explanation = "SectionId holds the foreign key value that references the primary key of the Section table."
             },
+
+            // Question 9
+            new ExamQuestion
+            {
+                Id = 9,
+                QuestionText = "What is the purpose of a navigation property such as 'public Section Section { get; set; }'?",
+                Options = new List<string>
+                {
+                    "A. It stores the database password",
+                    "B. It represents a relationship to another entity",
+                    "C. It creates a new database",
+                    "D. It validates the student's name"
+                },
+                CorrectAnswer = "B. It represents a relationship to another entity",
+                Explanation = "Navigation properties enable navigating relationships between related entity objects in code."
+            },
         };
 
         public IActionResult Index()
