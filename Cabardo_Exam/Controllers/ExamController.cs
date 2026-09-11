@@ -294,6 +294,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "B. UseExceptionHandler()",
                 Explanation = "UseExceptionHandler() catches unhandled exceptions globally across the HTTP application pipeline."
             },
+
+            // Question 19
+            new ExamQuestion
+            {
+                Id = 19,
+                QuestionText = "A user requests /Student/999, but Student 999 does not exist. What would be the most appropriate response?",
+                Options = new List<string>
+                {
+                    "A. Display the student's information anyway",
+                    "B. Display a Not Found (404) response/page",
+                    "C. Delete Student 999",
+                    "D. Create Student 999 automatically"
+                },
+                CorrectAnswer = "B. Display a Not Found (404) response/page",
+                Explanation = "An HTTP 404 status correctly indicates to the client that the requested resource could not be found."
+            },
         };
 
         public IActionResult Index()
