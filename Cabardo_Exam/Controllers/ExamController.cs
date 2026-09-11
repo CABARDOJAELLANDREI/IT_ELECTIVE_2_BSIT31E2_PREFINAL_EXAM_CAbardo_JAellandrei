@@ -70,7 +70,23 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "A. DbContext",
                 Explanation = "DbContext manages database connections, session tracking, and query executions."
             },
-        };
+
+            // Question 5
+            new ExamQuestion
+            {
+                Id = 5,
+                QuestionText = "What does the command 'dotnet ef dbcontext scaffold' primarily do?",
+                Options = new List<string>
+                {
+                    "A. Deletes the database",
+                    "B. Creates a new MVC project",
+                    "C. Generates EF Core models and a DbContext from an existing database",
+                    "D. Starts the MVC application"
+                },
+                CorrectAnswer = "C. Generates EF Core models and a DbContext from an existing database",
+                Explanation = "Scaffolding generates C# entity classes and a DbContext instance directly from an existing database schema."
+            }
+    };
 
         public IActionResult Index()
         {
