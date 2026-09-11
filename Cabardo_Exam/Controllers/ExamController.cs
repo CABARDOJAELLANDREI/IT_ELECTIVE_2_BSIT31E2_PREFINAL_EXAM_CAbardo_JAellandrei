@@ -262,6 +262,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "A. It protects data integrity even if application-level validation is bypassed",
                 Explanation = "Database constraints enforce integrity at the lowest level regardless of application entry points."
             },
+
+            // Question 17
+            new ExamQuestion
+            {
+                Id = 17,
+                QuestionText = "What is the purpose of a try...catch block in a controller?",
+                Options = new List<string>
+                {
+                    "A. To create navigation properties",
+                    "B. To catch and handle exceptions that may occur during execution",
+                    "C. To generate database tables",
+                    "D. To perform client-side validation"
+                },
+                CorrectAnswer = "B. To catch and handle exceptions that may occur during execution",
+                Explanation = "Try-catch blocks intercept runtime exceptions, allowing safe and controlled error handling."
+            },
         };
 
         public IActionResult Index()
