@@ -118,6 +118,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "B. One-to-Many",
                 Explanation = "A single Section entity maps to multiple Student entities."
             },
+
+            // Question 8
+            new ExamQuestion
+            {
+                Id = 8,
+                QuestionText = "In the following example, what is SectionId? 'public int SectionId { get; set; } public Section Section { get; set; }'",
+                Options = new List<string>
+                {
+                    "A. Primary key of Student",
+                    "B. Foreign key referencing Section",
+                    "C. Navigation property",
+                    "D. Database connection string"
+                },
+                CorrectAnswer = "B. Foreign key referencing Section",
+                Explanation = "SectionId holds the foreign key value that references the primary key of the Section table."
+            },
         };
 
         public IActionResult Index()
