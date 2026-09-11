@@ -278,6 +278,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "B. To catch and handle exceptions that may occur during execution",
                 Explanation = "Try-catch blocks intercept runtime exceptions, allowing safe and controlled error handling."
             },
+
+            // Question 18
+            new ExamQuestion
+            {
+                Id = 18,
+                QuestionText = "Which middleware is commonly used in ASP.NET Core for centralized exception handling?",
+                Options = new List<string>
+                {
+                    "A. UseDatabase()",
+                    "B. UseExceptionHandler()",
+                    "C. UseValidationHandler()",
+                    "D. UseMvcDatabase()"
+                },
+                CorrectAnswer = "B. UseExceptionHandler()",
+                Explanation = "UseExceptionHandler() catches unhandled exceptions globally across the HTTP application pipeline."
+            },
         };
 
         public IActionResult Index()
