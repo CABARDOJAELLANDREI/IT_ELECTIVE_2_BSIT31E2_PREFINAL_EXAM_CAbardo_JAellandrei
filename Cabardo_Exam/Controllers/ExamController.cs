@@ -214,6 +214,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "B. Client-side validation",
                 Explanation = "Client-side validation runs in the browser via JavaScript to check user input before submission."
             },
+
+            // Question 14
+            new ExamQuestion
+            {
+                Id = 14,
+                QuestionText = "Why is server-side validation still necessary if client-side validation exists?",
+                Options = new List<string>
+                {
+                    "A. Client-side validation can be bypassed",
+                    "B. Client-side validation automatically modifies the database",
+                    "C. Server-side validation only works with SQLite",
+                    "D. Client-side validation cannot display messages"
+                },
+                CorrectAnswer = "A. Client-side validation can be bypassed",
+                Explanation = "Client-side validation can be disabled or bypassed, making server-side checks crucial for security."
+            },
         };
 
         public IActionResult Index()
