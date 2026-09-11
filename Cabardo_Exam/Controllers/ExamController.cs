@@ -54,6 +54,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "C. To map objects in code to relational database data",
                 Explanation = "EF Core is an Object-Relational Mapper (ORM) that bridges C# objects and relational database tables."
             },
+
+            // Question 4
+            new ExamQuestion
+            {
+                Id = 4,
+                QuestionText = "Which EF Core component is primarily responsible for communicating with the database?",
+                Options = new List<string>
+                {
+                    "A. DbContext",
+                    "B. DbSetView",
+                    "C. ControllerContext",
+                    "D. RazorContext"
+                },
+                CorrectAnswer = "A. DbContext",
+                Explanation = "DbContext manages database connections, session tracking, and query executions."
+            },
         };
 
         public IActionResult Index()
