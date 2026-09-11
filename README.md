@@ -1,16 +1,28 @@
 <div align="center">
 
-  <!-- HEADER BANNER -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=220&section=header&text=Prefinal%20Exam%20Portal&fontSize=42&fontAlignY=38&desc=WEB%20SYSTEMS%20%26%20TECHNOLOGIES%20%E2%80%A2%20DYNAMIC%20QUESTION%20BANK&descSize=14&descAlignY=62" width="100%" />
+  <!-- TOP HERO PANEL (PURE HTML / GITHUB-SAFE / BROKEN-LINK PROOF) -->
+  <table width="100%">
+    <tr>
+      <td align="center" style="background: linear-gradient(135deg, #07192f 0%, #0c2840 45%, #2a0826 100%); padding: 35px 20px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.15);">
+        <p align="center" style="margin-bottom: 12px;">
+          <img src="https://img.shields.io/badge/IT_ELECTIVE_2-PREFINAL_EXAM_PORTAL-00d2ff?style=for-the-badge&logoColor=white" alt="Header Badge" />
+        </p>
+        <h1 align="center" style="color: #ffffff; font-size: 32px; font-weight: 800; margin: 10px 0;">
+          ⚡ Prefinal Exam Portal Dashboard
+        </h1>
+        <p align="center" style="color: #00d2ff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">
+          Web Systems &amp; Technologies — Dynamic Question Bank
+        </p>
+        <p align="center" style="color: #e2e8f0; font-size: 15px; margin-bottom: 0;">
+          <b>Jaell Andrei Cabardo</b> &nbsp;•&nbsp; 
+          <span style="color: #9d4edd; font-weight: bold;">BSIT31E2</span> &nbsp;•&nbsp; 
+          A.Y. 2026–2027
+        </p>
+      </td>
+    </tr>
+  </table>
 
   <br/>
-
-  <!-- TYPING SVG QUOTE -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=IT+ELECTIVE+2+%E2%80%A2+PREFINAL+EXAM+DASHBOARD;Jaell+Andrei+Cabardo+%E2%80%A2+BSIT31E2" alt="Typing Quote" />
-  </a>
-
-  <br/><br/>
 
   <!-- TOP BADGES -->
   <p>
@@ -29,7 +41,7 @@
 
   <br/><br/>
 
-  <!-- STUDENT & REPOSITORY INFORMATION -->
+  <!-- REPOSITORY OVERVIEW -->
   <h2>⚡ REPOSITORY OVERVIEW</h2>
 
   <table>
@@ -93,4 +105,4 @@
  ┃ ┗ 📂 Shared
  ┃   ┗ 📜 _Layout.cshtml          <-- Core layout with fonts & icons
  ┣ 📂 wwwroot                     <-- Bootstrap & site styling assets
- ┗ 📜 README.md                   <-- Profile-styled README
+ ┗ 📜 README.md                   <-- Fixed README documentation
