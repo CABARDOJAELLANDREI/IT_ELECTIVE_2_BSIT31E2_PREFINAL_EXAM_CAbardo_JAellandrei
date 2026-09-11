@@ -182,6 +182,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "B. To combine or shape the data specifically needed by the view",
                 Explanation = "ViewModels serve as custom data wrappers tailored specifically for UI rendering needs."
             },
+
+            // Question 12
+            new ExamQuestion
+            {
+                Id = 12,
+                QuestionText = "Consider this query: var students = _context.Students.Include(s => s.Section).ToList(); What is the main benefit of Include(s => s.Section)?",
+                Options = new List<string>
+                {
+                    "A. It loads the related Section navigation property",
+                    "B. It creates a Section object manually",
+                    "C. It removes the foreign key",
+                    "D. It prevents the query from accessing the database"
+                },
+                CorrectAnswer = "A. It loads the related Section navigation property",
+                Explanation = "Passing the expression 's => s.Section' to Include ensures the related Section model is populated."
+            },
         };
 
         public IActionResult Index()
