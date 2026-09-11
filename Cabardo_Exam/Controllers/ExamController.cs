@@ -310,6 +310,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "B. Display a Not Found (404) response/page",
                 Explanation = "An HTTP 404 status correctly indicates to the client that the requested resource could not be found."
             },
+
+            // Question 20
+            new ExamQuestion
+            {
+                Id = 20,
+                QuestionText = "A student already belongs to Section A for a particular subject. The application attempts to assign the same student to Section A again. What is the primary concern?",
+                Options = new List<string>
+                {
+                    "A. Data integrity",
+                    "B. HTML formatting",
+                    "C. CSS inheritance",
+                    "D. Razor syntax"
+                },
+                CorrectAnswer = "A. Data integrity",
+                Explanation = "Preventing duplicate registrations preserves data consistency and overall business rule integrity."
+            }
         };
 
         public IActionResult Index()
