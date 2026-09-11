@@ -85,8 +85,24 @@ namespace ExamApp.Controllers
                 },
                 CorrectAnswer = "C. Generates EF Core models and a DbContext from an existing database",
                 Explanation = "Scaffolding generates C# entity classes and a DbContext instance directly from an existing database schema."
-            }
-    };
+            },
+
+            // Question 6
+            new ExamQuestion
+            {
+                Id = 6,
+                QuestionText = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?",
+                Options = new List<string>
+                {
+                    "A. Program.cs only",
+                    "B. appsettings.json",
+                    "C. Index.cshtml",
+                    "D. Student.cs"
+                },
+                CorrectAnswer = "B. appsettings.json",
+                Explanation = "Application configuration settings, including connection strings, belong in appsettings.json."
+            },
+        };
 
         public IActionResult Index()
         {
