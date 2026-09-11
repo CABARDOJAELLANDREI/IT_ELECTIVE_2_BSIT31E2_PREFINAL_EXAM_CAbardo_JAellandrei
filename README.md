@@ -1,37 +1,22 @@
 <div align="center">
 
-  <!-- Top Hero Banner Panel with Theme Gradient -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" style="border-radius: 12px; margin-bottom: 20px;">
-    <defs>
-      <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#07192f" />
-        <stop offset="45%" stop-color="#0c2840" />
-        <stop offset="100%" stop-color="#2a0826" />
-      </linearGradient>
-      <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#00d2ff" />
-        <stop offset="100%" stop-color="#9d4edd" />
-      </linearGradient>
-    </defs>
-    
-    <!-- Background Panel -->
-    <rect width="1200" height="300" rx="16" fill="url(#cyberGradient)" />
-    
-    <!-- Top Glowing Accent Line -->
-    <rect y="0" width="1200" height="6" fill="url(#badgeGrad)" />
-    
-    <!-- Header Content -->
-    <rect x="490" y="45" width="220" height="32" rx="16" fill="url(#badgeGrad)" />
-    <text x="600" y="66" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" letter-spacing="2">IT ELECTIVE 2</text>
-    
-    <text x="600" y="135" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="38" font-weight="800" text-anchor="middle">Prefinal Exam Portal Dashboard</text>
-    
-    <text x="600" y="180" fill="#00d2ff" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="20" font-weight="600" text-anchor="middle" opacity="0.9">Web Systems &amp; Technologies — Dynamic Question Bank</text>
-    
-    <text x="600" y="235" fill="#e2e8f0" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="500" text-anchor="middle">
-      Jaell Andrei Cabardo  •  BSIT31E2  •  A.Y. 2026–2027
-    </text>
-  </svg>
+  <!-- Header Banner Block -->
+  <table width="100%">
+    <tr>
+      <td align="center" style="background: linear-gradient(135deg, #07192f 0%, #0c2840 45%, #2a0826 100%); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+        <p><img src="https://img.shields.io/badge/IT_ELECTIVE_2-PREFINAL_EXAM-00d2ff?style=for-the-badge&logoColor=white" alt="Badge" /></p>
+        <h1 align="center">⚡ Prefinal Exam Portal Dashboard</h1>
+        <p align="center"><b>Web Systems &amp; Technologies — Dynamic Question Bank</b></p>
+        <p align="center">
+          <b>Jaell Andrei Cabardo</b> &nbsp;•&nbsp; 
+          <b>BSIT31E2</b> &nbsp;•&nbsp; 
+          <b>A.Y. 2026–2027</b>
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <br />
 
   <!-- GitHub Badges -->
   <p>
@@ -100,4 +85,4 @@
  ┃ ┗ 📂 Shared
  ┃   ┗ 📜 _Layout.cshtml          <-- Core layout with fonts & icons
  ┣ 📂 wwwroot                     <-- Bootstrap & site styling assets
- ┗ 📜 README.md                   <-- HTML-styled documentation
+ ┗ 📜 README.md
