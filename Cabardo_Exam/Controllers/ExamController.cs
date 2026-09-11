@@ -102,6 +102,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "B. appsettings.json",
                 Explanation = "Application configuration settings, including connection strings, belong in appsettings.json."
             },
+
+            // Question 7
+            new ExamQuestion
+            {
+                Id = 7,
+                QuestionText = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?",
+                Options = new List<string>
+                {
+                    "A. One-to-One",
+                    "B. One-to-Many",
+                    "C. Many-to-Many",
+                    "D. Many-to-One only"
+                },
+                CorrectAnswer = "B. One-to-Many",
+                Explanation = "A single Section entity maps to multiple Student entities."
+            },
         };
 
         public IActionResult Index()
