@@ -150,6 +150,22 @@ namespace ExamApp.Controllers
                 CorrectAnswer = "B. It represents a relationship to another entity",
                 Explanation = "Navigation properties enable navigating relationships between related entity objects in code."
             },
+
+            // Question 10
+            new ExamQuestion
+            {
+                Id = 10,
+                QuestionText = "What does .Include() generally allow EF Core to do?",
+                Options = new List<string>
+                {
+                    "A. Delete the Section table",
+                    "B. Load related Section data together with Students",
+                    "C. Create a new Student",
+                    "D. Validate Student input"
+                },
+                CorrectAnswer = "B. Load related Section data together with Students",
+                Explanation = "The .Include() method performs eager loading to fetch related entity data alongside the main query."
+            },
         };
 
         public IActionResult Index()
