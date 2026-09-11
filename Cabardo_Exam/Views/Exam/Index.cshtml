@@ -1,32 +1,236 @@
 ﻿@model IEnumerable<ExamApp.Models.ExamQuestion>
 
-<div class="container mt-4">
-    <h2 class="mb-4 text-center">Prefinal Exam Questions & Answers</h2>
-    <div class="row">
+<style>
+    :root {
+        --bg-gradient: linear-gradient(135deg, #07192f 0%, #0c2840 45%, #2a0826 100%);
+        --glass-bg: rgba(15, 23, 42, 0.65);
+        --glass-border: rgba(255, 255, 255, 0.1);
+        --accent-blue: #00d2ff;
+        --accent-purple: #9d4edd;
+        --correct-glow: #00ff87;
+        --correct-bg: rgba(0, 255, 135, 0.12);
+        --correct-border: rgba(0, 255, 135, 0.4);
+    }
+
+    body.dark-theme-bg {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background: var(--bg-gradient);
+        background-attachment: fixed;
+        min-height: 100vh;
+        color: #f1f5f9;
+    }
+
+    /* Glassmorphism Cards */
+    .glass-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid var(--glass-border);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 210, 255, 0.3);
+            box-shadow: 0 12px 40px 0 rgba(0, 210, 255, 0.15);
+        }
+
+    /* Badges & Glowing Elements */
+    .badge-cyber {
+        background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 700;
+        box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+    }
+
+    .q-num-box {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        box-shadow: 0 0 12px rgba(0, 210, 255, 0.5);
+    }
+
+    /* Option Items */
+    .option-pill {
+        border-radius: 10px;
+        padding: 12px 16px;
+        margin-bottom: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: #cbd5e1;
+        transition: all 0.2s ease;
+    }
+
+        .option-pill.correct {
+            background: var(--correct-bg) !important;
+            border-color: var(--correct-border) !important;
+            color: #ffffff !important;
+            font-weight: 600;
+            box-shadow: 0 0 15px rgba(0, 255, 135, 0.2);
+        }
+
+    /* Explanation Box */
+    .explanation-container {
+        background: rgba(0, 210, 255, 0.05);
+        border-left: 3px solid var(--accent-blue);
+        border-radius: 0 10px 10px 0;
+    }
+
+    /* Navigation Pills */
+    .nav-pill-cyber {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #94a3b8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.85rem;
+        transition: all 0.2s ease;
+    }
+
+        .nav-pill-cyber:hover {
+            background: var(--accent-blue);
+            color: #0f172a;
+            box-shadow: 0 0 10px var(--accent-blue);
+        }
+
+    /* Custom Input Search */
+    .search-cyber {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        color: #fff !important;
+        border-radius: 10px;
+    }
+
+        .search-cyber::placeholder {
+            color: #64748b;
+        }
+
+        .search-cyber:focus {
+            border-color: var(--accent-blue) !important;
+            box-shadow: 0 0 10px rgba(0, 210, 255, 0.3) !important;
+        }
+</style>
+
+<!-- Top Header Section -->
+<div class="py-5 mb-4 position-relative">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <span class="badge badge-cyber px-3 py-2 text-uppercase">IT ELECTIVE 2</span>
+                    <span class="badge bg-white bg-opacity-10 text-info px-3 py-2 border border-info border-opacity-25 rounded-pill">
+                        <i class="bi bi-person-badge-fill me-1"></i> BSIT31E2
+                    </span>
+                </div>
+                <h1 class="fw-extrabold display-5 text-white mb-1">Prefinal Exam Dashboard</h1>
+                <p class="text-info opacity-75 mb-0">
+                    <span class="fw-bold text-white">Jaell Andrei Cabardo</span> — Web Systems & Technologies
+                </p>
+            </div>
+            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                <div class="glass-card p-3 d-inline-block text-start">
+                    <div class="text-uppercase small text-muted fw-bold">Items Evaluated</div>
+                    <div class="fs-3 fw-bold text-white mb-0">
+                        <span class="text-info">@Model.Count()</span> / @Model.Count()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container pb-5">
+    <!-- Question Quick Jump Nav -->
+    <div class="glass-card p-3 mb-4">
+        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-3">
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-compass-fill text-info fs-5"></i>
+                <span class="fw-bold text-uppercase text-light small">Quick Navigation</span>
+            </div>
+            <div class="w-auto">
+                <input type="text" id="searchInput" class="form-control form-control-sm search-cyber px-3" placeholder="Search keywords...">
+            </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            @foreach (var item in Model)
+            {
+                <a href="#q-@item.Id" class="nav-pill-cyber">
+                    @item.Id
+                </a>
+            }
+        </div>
+    </div>
+
+    <!-- Questions Grid -->
+    <div class="row g-4" id="questionsContainer">
         @foreach (var q in Model)
         {
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 shadow-sm border-primary">
-                    <div class="card-header bg-primary text-white fw-bold">
-                        Question #@q.Id
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text fw-bold">@q.QuestionText</p>
-                        <ul class="list-group list-group-flush mb-3">
-                            @foreach (var opt in q.Options)
-                            {
-                                bool isCorrect = opt.StartsWith(q.CorrectAnswer.Substring(0, 2));
-                                <li class="list-group-item @(isCorrect ? "list-group-item-success fw-bold" : "")">
-                                    @opt @(isCorrect ? " ✔" : "")
-                                </li>
-                            }
-                        </ul>
-                        <div class="alert alert-info py-2 m-0">
-                            <strong>Explanation:</strong> @q.Explanation
+            <div class="col-lg-6 question-card-wrapper" id="q-@q.Id">
+                <div class="glass-card p-4 h-100 d-flex flex-column">
+
+                    <!-- Question Header -->
+                    <div class="d-flex align-items-start gap-3 mb-3">
+                        <div class="q-num-box text-white flex-shrink-0">
+                            #@q.Id
                         </div>
+                        <h5 class="fw-bold text-white mb-0 lh-base pt-1">
+                            @q.QuestionText
+                        </h5>
                     </div>
+
+                    <!-- Options List -->
+                    <div class="mb-3 flex-grow-1">
+                        @foreach (var opt in q.Options)
+                        {
+                            bool isCorrect = opt.StartsWith(q.CorrectAnswer.Substring(0, 2));
+                            <div class="option-pill d-flex align-items-center justify-content-between @(isCorrect ? "correct" : "")">
+                                <span>@opt</span>
+                                @if (isCorrect)
+                                {
+                                    <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                                }
+                            </div>
+                        }
+                    </div>
+
+                    <!-- Explanation Container -->
+                    <div class="explanation-container p-3 mt-auto">
+                        <div class="d-flex align-items-center gap-2 text-info fw-bold small mb-1">
+                            <i class="bi bi-lightning-charge-fill"></i> EXPLANATION
+                        </div>
+                        <p class="small text-light opacity-75 mb-0">@q.Explanation</p>
+                    </div>
+
                 </div>
             </div>
         }
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        // Real-time Search Filter
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let filter = this.value.toLowerCase();
+            let cards = document.querySelectorAll('.question-card-wrapper');
+            cards.forEach(card => {
+                let text = card.textContent.toLowerCase();
+                card.style.display = text.includes(filter) ? '' : 'none';
+            });
+        });
+    </script>
+}
